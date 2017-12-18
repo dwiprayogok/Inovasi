@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:clickable="true"
+    android:focusable="true"
+    >
+    <RelativeLayout
+        android:background="@drawable/ripple_view"
+        android:clickable="false"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="73dp">
+        <RelativeLayout
+            android:id="@+id/lay_list_refund_name"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jajang Suhadma"
+                android:textSize="18sp"
+                android:textColor="@color/md_black_1000"/>
+            <TextView
+                android:id="@+id/posisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:layout_marginTop="5dp"
+                android:text="HO"
+                android:textSize="13sp"
+                android:textColor="@color/md_black_1000"/>
+            <TextView
+                android:id="@+id/status"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNPAID"
+                android:layout_alignParentBottom="true"
+                android:textSize="13sp"
+                android:textColor="@color/md_black_1000"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:text="12 - 05 - 2017"
+                android:textSize="13sp"
+                android:textColor="@color/md_black_1000"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay_list_refund_name"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/drop_shadow"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

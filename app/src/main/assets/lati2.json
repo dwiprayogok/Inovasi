@@ -1,0 +1,18 @@
+{
+  "refund" : [
+    {
+      "nama": "Agus Sumaryono",
+      "jabatan": "GM",
+      "tanggal": "22-03-2017",
+      "status": "Paid"
+    },
+    {
+      "nama": "Sumaryani",
+      "jabatan": "BM",
+      "tanggal": "09-04-2015",
+      "status": "UNPAID"
+
+    }
+  ]
+
+}

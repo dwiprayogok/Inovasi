@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lay_logo"
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:textColor="@color/md_white_1000"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT \nTRACKING"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/lay_logo"
+        android:id="@+id/content_payment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        ----Button Menu Payment---
+
+        <LinearLayout
+            android:id="@+id/lay_button_payment"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@drawable/list_arrow"
+                android:layout_width="200dp"
+                android:drawableTint="@color/md_black_1000"
+                android:layout_height="wrap_content"
+                android:text="PO"
+                android:background="@drawable/ripple_red_button"
+                android:textColor="@color/md_black_1000"
+                android:id="@+id/btn_PO"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:layout_marginBottom="15dp"
+                />
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/md_black_1000"
+                android:drawableRight="@drawable/list_arrow"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="REFUND"
+                android:background="@drawable/ripple_red_button"
+                android:textColor="@color/md_black_1000"
+                android:id="@+id/btn_refund"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:layout_marginBottom="15dp"
+                />
+
+        </LinearLayout>
+
+        ----Button Menu Payment---
+
+
+
+
+        ---PO-----
+        //Info_payment
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="150dp"
+            android:id="@+id/lay_info_payment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            //IP
+            <LinearLayout
+                android:id="@+id/lay_ip"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/ip"
+                    android:text="APP IP"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/simbol1_payment"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/value_IP_payment"
+                    android:text="xxx IP"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //AMOUNT
+            <LinearLayout
+                android:id="@+id/lay_stat"
+                android:layout_below="@+id/lay_ip"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/amount"
+                    android:text="AMOUNT"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="39dp"
+                    android:id="@+id/simbol2_payment"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/value_amount"
+                    android:text="xxx IP"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //STATUS payment
+            <LinearLayout
+                android:layout_below="@+id/lay_stat"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/status_payment"
+                    android:text="STATUS"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="49dp"
+                    android:id="@+id/simbol3_payment"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/value_status_payment"
+                    android:text="xxx IP"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //PAID DATE
+            <LinearLayout
+                android:layout_below="@+id/lay_stat"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/paiddate"
+                    android:text="PAID DATE"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="23dp"
+                    android:id="@+id/simbol4_payment"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/value_paiddate"
+                    android:text="xxx IP"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //lay_search_payment
+        <LinearLayout
+            android:id="@+id/lay_search_payment"
+            android:layout_marginTop="150dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay_name_payment"
+                android:background="@color/md_white_5">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan App ID"
+                    android:textColor="@color/md_black_1000"/>
+
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/md_black_1000"
+                    android:textAlignment="center"
+                    android:id="@+id/edt_PO"
+                    android:inputType="textAutoComplete"
+                    android:ems="10"/>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@color/md_black_1000"
+                android:id="@+id/btn_search_PO"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </LinearLayout>
+        ---PO-----
+
+
+
+
+
+
+
+        ---REFUND-----
+
+        //lay_table_refund
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lay_table_refund"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            //IP_refund
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:id="@+id/lay_ip_refund"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/ip_refund"
+                    android:text="APP IP"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/simbol1_refund"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/value_IP_refund"
+                    android:text="xxx IP"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            ///tabel refund
+            <TableLayout
+                android:padding="15dp"
+                android:id="@+id/table_REFUND"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4"
+                >
+
+                <TableRow
+                    android:background="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:padding="0dp"
+                    >
+
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:layout_margin="1dp"
+                        android:layout_column="0"
+                        android:textColor="@color/md_black_1000"
+
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Position"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:layout_column="1"
+
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Status"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Date"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+                //rowaccount
+                <TableRow
+                    android:background="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_nama_refund"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAEFUDIN"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/posisi_refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="HO"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/status_refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="UNPAID"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_cell_new"
+                        android:gravity="center"
+                        android:layout_column="2" />
+
+                    <TextView
+                        android:id="@+id/tgl_refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="12 - 05 - 2017"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_cell_new"
+                        android:gravity="center"
+                        android:layout_column="2" />
+                </TableRow>
+
+                <TableRow
+                    android:background="#000000"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/amount_edc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/amount_non_edc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_cell_new"
+                        android:gravity="center"
+                        android:layout_column="2" />
+                    <TextView
+                        android:id="@+id/amount_non_edc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_cell_new"
+                        android:gravity="center"
+                        android:layout_column="2" />
+                </TableRow>
+
+
+
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        //lay_search_payment
+        <LinearLayout
+            android:id="@+id/lay_search_refund"
+            android:layout_marginTop="150dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay_name_refund"
+                android:background="@color/md_white_5">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan App ID"
+                    android:textColor="@color/md_black_1000"/>
+
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/md_black_1000"
+                    android:textAlignment="center"
+                    android:id="@+id/edt_refund"
+                    android:inputType="textAutoComplete"
+                    android:ems="10"/>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@color/md_black_1000"
+                android:id="@+id/btn_search_refund"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </LinearLayout>
+
+        ---REFUND-----
+
+
+
+        <ImageView
+            android:id="@+id/logo_home2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_2"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+

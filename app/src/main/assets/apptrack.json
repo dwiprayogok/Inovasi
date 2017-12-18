@@ -1,0 +1,21 @@
+{
+  "appid" : [
+    {
+      "app id": "9001700010",
+      "nama": "Agus Sumaryono",
+      "aggrementno": "9001700011",
+      "asset": "TOYOTA AVANZA 1.5 MT",
+      "appstep": "RCA",
+      "nextstep": "Approval"
+    },
+    {
+      "app id": "534121321",
+      "nama": "Agus",
+      "aggrementno": "9001700012",
+      "asset": "TOYOTA AVANZA 1.3 MT",
+      "appstep": "Delivery Order",
+      "nextstep": "GoLive"
+    }
+  ]
+
+}

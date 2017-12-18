@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Inovation</string>
+
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_history">History</string>
+    <string name="nav_item_profile">Profile</string>
+    <string name="nav_item_booking">Booking</string>
+    <string name="nav_item_history_booking"> History Booking</string>
+    <string name="nav_item_information">Information</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_history</item>
+        <item>@string/nav_item_profile</item>
+        <item>@string/nav_item_information</item>
+        <item>@string/nav_item_logout</item>
+
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="info">Untuk Mendapatkan LoginID Harap Masukkan Nama Anda Terlebih Dahulu</string>
+
+    <string name="info2">GO TO PAGE INPUT LOGINID</string>
+    <string name="info3">GO TO PAGE INPUT NAME</string>
+
+    <string-array name="search">
+    <item>@string/name</item>
+    <item>@string/appid</item>
+    <item>@string/agrement</item>
+    <item>@string/supplier</item>
+    </string-array>
+
+    <string name="name">Customer Name </string>
+    <string name="appid">Application ID</string>
+    <string name="agrement">Aggreement NO</string>
+    <string name="supplier">Supplier Name</string>
+
+
+
+</resources>

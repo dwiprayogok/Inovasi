@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lay_logo"
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/md_white_5"
+        android:id="@+id/content_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        //lay_name
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/lay_name"
+            android:background="@color/md_white_5"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_5">
+
+
+                <EditText
+                    android:textColor="@color/md_black_1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nama"
+                    android:textColorHint="@color/md_black_1000"
+                    android:textAlignment="center"
+                    android:id="@+id/edtname"
+                    android:inputType="textAutoComplete"
+                    android:ems="10"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHECK"
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/btn_check"
+                    android:background="@drawable/ripple_button"
+                    style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                    android:layout_marginBottom="15dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/lay_name"
+                android:id="@+id/info_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_red_300"
+                android:textStyle="bold"
+                android:text="@string/info"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+        //lay_loginID
+        <LinearLayout
+            android:id="@+id/lay_loginID"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_no1"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_5">
+
+                <EditText
+                    android:textColor="@color/md_black_1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="LOGINID"
+                    android:textColorHint="@color/md_black_1000"
+                    android:textAlignment="center"
+                    android:id="@+id/edt_loginID"
+                    android:inputType="textAutoComplete"
+                    android:ems="10"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/btn_signin"
+                    android:background="@drawable/ripple_button"
+                    style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                    android:layout_marginBottom="15dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/list_arrow"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info2"
+            android:textColor="@color/md_black_1000"
+            android:id="@+id/btn_pindah"
+            android:visibility="visible"
+            android:background="@drawable/ripple_button"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <Button
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/list_arrow_left"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info3"
+            android:textColor="@color/md_black_1000"
+            android:id="@+id/btn_pindah2"
+            android:background="@drawable/ripple_button"
+            android:layout_marginBottom="15dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+

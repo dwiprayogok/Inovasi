@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/md_white_1000"
+            android:id="@+id/lay_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            //Name
+            <LinearLayout
+                android:id="@+id/lay_Name"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/ip"
+                    android:text="Customer Name"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/simbol"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_Name"
+                    android:text="xxx IP"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //Aggrement
+            <LinearLayout
+                android:id="@+id/lay_Aggrement"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/Aggrement"
+                    android:text="Aggrement No"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="32.5dp"
+                    android:id="@+id/simbol_Aggrement"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_Aggrement"
+                    android:text="xxx IP"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //Suppliername
+            <LinearLayout
+                android:id="@+id/lay_Suppliername"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:text="Suppliername"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="38.5dp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_Suppliername"
+                    android:text="Asep"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            //ASSET
+            <LinearLayout
+                android:id="@+id/lay_Asset"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/Asset"
+                    android:text="Asset"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="95.5dp"
+                    android:id="@+id/simbol_Asset"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_Asset"
+                    android:text="xxx IP"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            //APP STEP
+            <LinearLayout
+                android:id="@+id/lay_appstep"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:id="@+id/appstep"
+                    android:text="App Step"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="71.5dp"
+                    android:id="@+id/simbol_app"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_APP"
+                    android:text="xxx IP"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            //NEXT STEP
+            <LinearLayout
+                android:id="@+id/lay_NEXTstep"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:text="Next Step"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="66.5dp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/value_nextstep"
+                    android:text="xxx IP"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

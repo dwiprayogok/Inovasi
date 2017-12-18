@@ -1,0 +1,30 @@
+{
+  "po" : [
+    {
+      "appid": "8454252346",
+      "nama": "Yuni",
+      "aggrementno": "9001700007",
+      "asset": "TOYOTA AVANZA 1.5 MT",
+      "status": "Paid",
+      "paiddate": "12-10-2017"
+    },
+    {
+      "appid": "9281391823",
+      "nama": "Sumaryono",
+      "aggrementno": "9001700008",
+      "asset": "TOYOTA AVANZA 1.5 MT",
+      "status": "Unpaid",
+      "paiddate": "22-04-2017"
+    },
+    {
+      "appid": "9234763234",
+      "nama": "Regita",
+      "aggrementno": "9001700009",
+      "asset": "TOYOTA AVANZA 1.5 MT",
+      "status": "Paid",
+      "paiddate": "20-11-2017"
+    }
+
+  ]
+
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lay_logo"
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:textColor="@color/md_white_1000"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT REFUND"/>
+    </RelativeLayout>
+
+    //lay_table_refund
+    <LinearLayout
+        android:layout_below="@+id/lay_logo"
+        android:visibility="visible"
+        android:id="@+id/lay_list_refund"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //Customer Name
+        <LinearLayout
+            android:id="@+id/lay_cust_name"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:text="Customer Name"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="10dp"
+                android:text=":"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/value_cust_name"
+                android:text="Dwi Prayogo Kurniadi"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        //lay_aggNo
+        <LinearLayout
+            android:id="@+id/lay_aggNo"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:text="Aggrement No"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="22.5dp"
+                android:text=":"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/value_aggNo"
+                android:text="32323124241"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        //lay_suppliername
+        <LinearLayout
+            android:id="@+id/lay_suppliername"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:text="Suppliername"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="29.5dp"
+                android:text=":"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/value_suppliername"
+                android:text="32323124241"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/list_refund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
